@@ -4,6 +4,7 @@ import "./globals.css";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { brand } from "@/lib/brand";
+import { Analytics } from "@vercel/analytics/next";
 
 // Sturdy, warm text serif: stays bold and readable at small heading sizes
 // (card titles, number section), unlike the thin display serifs. Normal
@@ -67,6 +68,7 @@ export default function RootLayout({
         <Header />
         <main>{children}</main>
         <Footer />
+        <Analytics />
       </body>
     </html>
   );
