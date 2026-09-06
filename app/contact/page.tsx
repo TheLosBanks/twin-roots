@@ -1,6 +1,7 @@
 import { brand } from "@/lib/brand";
 import { PageHero } from "@/components/PageHero";
 import { ContactForm } from "@/components/ContactForm";
+import { InsuranceCompact } from "@/components/Insurance";
 
 export const metadata = { title: "Contact" };
 
@@ -41,6 +42,13 @@ export default function Contact() {
                 <p className="text-xs uppercase tracking-widest text-clay">Based in</p>
                 <p className="mt-1 text-ink/80">{brand.location.city}</p>
               </div>
+            </div>
+
+            <div className="mt-8">
+              <InsuranceCompact heading="Insurance accepted" />
+              <p className="mt-4 text-sm leading-relaxed text-muted">
+                {brand.insurance.footnote}
+              </p>
             </div>
 
             <div className="mt-8 rounded-2xl border border-clay/30 bg-clay/5 p-5 text-sm leading-relaxed text-ink/80">

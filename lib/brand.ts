@@ -144,6 +144,11 @@ export const brand = {
     ],
     footnote:
       "Not on this list? Ask about a superbill you can submit to your plan for out-of-network reimbursement.",
+    selfPay: {
+      label: "Self-pay rate",
+      rate: "$175",
+      unit: "per session",
+    },
   },
 
   // Reassurance strip

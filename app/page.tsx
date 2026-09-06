@@ -4,6 +4,7 @@ import { brand } from "@/lib/brand";
 import { LogoEmblem } from "@/components/Logo";
 import { ServiceIcon } from "@/components/ServiceIcon";
 import { BookingCta } from "@/components/BookingCta";
+import { InsuranceCompact } from "@/components/Insurance";
 
 export default function Home() {
   return (
@@ -146,6 +147,26 @@ export default function Home() {
               See all services
               <span aria-hidden>&rarr;</span>
             </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* Insurance */}
+      <section className="border-y border-line bg-sand/40">
+        <div className="mx-auto max-w-6xl px-5 py-14">
+          <div className="grid gap-8 md:grid-cols-[0.9fr_1.6fr]">
+            <div>
+              <p className="text-xs uppercase tracking-[0.2em] text-clay">
+                Paying for care
+              </p>
+              <h2 className="mt-4 text-2xl leading-tight text-ink md:text-3xl">
+                {brand.insurance.heading}
+              </h2>
+              <p className="mt-3 leading-relaxed text-muted">
+                {brand.insurance.lead}
+              </p>
+            </div>
+            <InsuranceCompact tone="sand" />
           </div>
         </div>
       </section>

@@ -3,6 +3,7 @@ import { brand } from "@/lib/brand";
 import { PageHero } from "@/components/PageHero";
 import { BookingCta } from "@/components/BookingCta";
 import { ServiceIcon } from "@/components/ServiceIcon";
+import { InsuranceSection } from "@/components/Insurance";
 
 export const metadata = { title: "Services" };
 
@@ -42,28 +43,8 @@ export default function Services() {
           ))}
         </div>
 
-        {/* Insurance */}
-        <div className="mt-12 rounded-3xl border border-line bg-cream p-8 md:p-12">
-          <h2 className="text-2xl text-ink md:text-3xl">{brand.insurance.heading}</h2>
-          <p className="mt-3 max-w-2xl leading-relaxed text-muted">
-            {brand.insurance.lead}
-          </p>
-          <ul className="mt-7 flex flex-wrap gap-2.5">
-            {brand.insurance.plans.map((p) => (
-              <li
-                key={p.name}
-                className="inline-flex items-baseline gap-1.5 rounded-full border border-sage/30 bg-sage/5 px-4 py-2 text-sm text-sage-deep"
-              >
-                {p.name}
-                {"note" in p && (
-                  <span className="text-xs text-muted">({p.note})</span>
-                )}
-              </li>
-            ))}
-          </ul>
-          <p className="mt-6 text-sm leading-relaxed text-muted">
-            {brand.insurance.footnote}
-          </p>
+        <div className="mt-12">
+          <InsuranceSection />
         </div>
 
         <div className="mt-12 rounded-3xl bg-sage-deep p-8 text-cream md:p-12">
