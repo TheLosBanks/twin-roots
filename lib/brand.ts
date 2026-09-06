@@ -128,6 +128,24 @@ export const brand = {
     ],
   },
 
+  // Insurance accepted. Add a plan by adding a line here; the pills render from this.
+  insurance: {
+    heading: "Insurance accepted",
+    lead:
+      "Coverage varies by plan, so we will verify your benefits before your first session.",
+    plans: [
+      { name: "Aetna" },
+      { name: "Anthem Blue Cross California" },
+      { name: "Blue Shield of California" },
+      { name: "Carelon Behavioral Health", note: "serves Scripps Health Plan" },
+      { name: "Centivo / Evernorth" },
+      { name: "Cigna" },
+      { name: "Tricare Select PPO", note: "with superbill" },
+    ],
+    footnote:
+      "Not on this list? Ask about a superbill you can submit to your plan for out-of-network reimbursement.",
+  },
+
   // Reassurance strip
   trust: [
     "Licensed Marriage & Family Therapist #53811",

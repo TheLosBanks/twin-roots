@@ -42,6 +42,30 @@ export default function Services() {
           ))}
         </div>
 
+        {/* Insurance */}
+        <div className="mt-12 rounded-3xl border border-line bg-cream p-8 md:p-12">
+          <h2 className="text-2xl text-ink md:text-3xl">{brand.insurance.heading}</h2>
+          <p className="mt-3 max-w-2xl leading-relaxed text-muted">
+            {brand.insurance.lead}
+          </p>
+          <ul className="mt-7 flex flex-wrap gap-2.5">
+            {brand.insurance.plans.map((p) => (
+              <li
+                key={p.name}
+                className="inline-flex items-baseline gap-1.5 rounded-full border border-sage/30 bg-sage/5 px-4 py-2 text-sm text-sage-deep"
+              >
+                {p.name}
+                {"note" in p && (
+                  <span className="text-xs text-muted">({p.note})</span>
+                )}
+              </li>
+            ))}
+          </ul>
+          <p className="mt-6 text-sm leading-relaxed text-muted">
+            {brand.insurance.footnote}
+          </p>
+        </div>
+
         <div className="mt-12 rounded-3xl bg-sage-deep p-8 text-cream md:p-12">
           <div className="grid gap-8 md:grid-cols-3">
             <div>
@@ -61,8 +85,8 @@ export default function Services() {
             <div>
               <p className="text-xs uppercase tracking-[0.2em] text-clay-soft">Good to know</p>
               <p className="mt-3 leading-relaxed text-cream/85">
-                Fees and insurance details are shared during our consultation, so
-                there are no surprises.
+                Fees are shared during our consultation, and your insurance
+                benefits are verified before the first session.
               </p>
             </div>
           </div>
