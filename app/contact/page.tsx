@@ -19,8 +19,8 @@ export default function Contact() {
           <div>
             <h2 className="text-2xl text-ink">Get in touch</h2>
             <p className="mt-4 leading-relaxed text-muted">
-              Send a note below or email me directly. I will get back to you
-              personally and we will find a time to meet.
+              Send a note using the form or email me directly. I will get back
+              to you personally and we will find a time to meet.
             </p>
 
             <div className="mt-8 space-y-5 text-sm">
