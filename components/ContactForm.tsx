@@ -1,5 +1,6 @@
 "use client";
 
+import { brand } from "@/lib/brand";
 import { useState } from "react";
 
 export function ContactForm() {
@@ -76,8 +77,8 @@ export function ContactForm() {
       {status === "error" && (
         <p className="text-sm text-clay">
           Something went wrong. Please email {""}
-          <a className="underline" href="mailto:hello@twinrootspsychotherapy.com">
-            hello@twinrootspsychotherapy.com
+          <a className="underline" href={`mailto:${brand.contact.email}`}>
+            {brand.contact.email}
           </a>{" "}
           directly.
         </p>

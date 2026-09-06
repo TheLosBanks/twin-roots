@@ -117,13 +117,24 @@ export default function Home() {
             {brand.specialties.map((s) => (
               <div
                 key={s.title}
-                className="group rounded-2xl border border-line bg-cream p-7 transition hover:-translate-y-1 hover:border-sage/50 hover:shadow-sm"
+                className="group overflow-hidden rounded-2xl border border-line bg-cream transition hover:-translate-y-1 hover:border-sage/50 hover:shadow-sm"
               >
-                <div className="flex h-11 w-11 items-center justify-center rounded-full bg-sage/10">
-                  <ServiceIcon name={s.icon} className="h-6 w-6" />
+                <div className="relative aspect-[4/3] overflow-hidden bg-sand">
+                  <Image
+                    src={s.image}
+                    alt={s.imageAlt}
+                    fill
+                    sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                    className="object-cover transition duration-700 group-hover:scale-[1.04]"
+                  />
                 </div>
-                <h3 className="mt-5 text-xl text-ink">{s.title}</h3>
-                <p className="mt-2.5 text-sm leading-relaxed text-muted">{s.body}</p>
+                <div className="relative p-7">
+                  <div className="absolute -top-6 left-7 flex h-12 w-12 items-center justify-center rounded-full border border-line bg-cream shadow-sm">
+                    <ServiceIcon name={s.icon} className="h-6 w-6" />
+                  </div>
+                  <h3 className="mt-4 text-xl text-ink">{s.title}</h3>
+                  <p className="mt-2.5 text-sm leading-relaxed text-muted">{s.body}</p>
+                </div>
               </div>
             ))}
           </div>

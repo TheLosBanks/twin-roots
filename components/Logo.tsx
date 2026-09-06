@@ -8,8 +8,8 @@ export function LogoEmblem({ className = "" }: { className?: string }) {
     <Image
       src="/logo-mark.png"
       alt={`${brand.name} emblem`}
-      width={707}
-      height={707}
+      width={897}
+      height={902}
       className={className}
       priority
     />
@@ -22,8 +22,8 @@ export function LogoEmblemWhite({ className = "" }: { className?: string }) {
     <Image
       src="/logo-mark-white.png"
       alt={`${brand.name} emblem`}
-      width={674}
-      height={674}
+      width={897}
+      height={902}
       className={className}
     />
   );
@@ -35,8 +35,8 @@ export function LogoFull({ className = "" }: { className?: string }) {
     <Image
       src="/logo.png"
       alt={brand.name}
-      width={1280}
-      height={1024}
+      width={1142}
+      height={1195}
       className={className}
     />
   );

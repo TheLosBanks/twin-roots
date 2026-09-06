@@ -28,7 +28,7 @@ export const metadata: Metadata = {
     template: `%s | ${brand.name}`,
   },
   description:
-    "Perinatal and postpartum therapy with Dr. Heather St. Jean-Garcia, Psy.D., LMFT. Telehealth across California for postpartum depression, NICU parents, pregnancy and infant loss, and parents of multiples.",
+    "Perinatal and postpartum therapy with Dr. Heather St. Jean-Garcia, Psy.D., LMFT #53811. Telehealth across California for postpartum depression, NICU parents, pregnancy and infant loss, and parents of multiples.",
   openGraph: {
     title: brand.name,
     description: brand.tagline,

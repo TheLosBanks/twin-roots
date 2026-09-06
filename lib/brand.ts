@@ -8,16 +8,16 @@ export const brand = {
   tagline: "Rooted care for the season of becoming a parent.",
   therapist: {
     name: "Dr. Heather St. Jean-Garcia",
-    credentials: "Psy.D., LMFT",
+    credentials: "Psy.D., LMFT #53811",
     license: "CA LMFT #53811",
     title: "Licensed Marriage & Family Therapist",
   },
   location: {
-    city: "San Diego, CA",
-    serves: "Telehealth for clients across California",
+    city: "San Diego County, CA",
+    serves: "Telehealth across California, and in-person in La Mesa, CA",
   },
   contact: {
-    email: "hello@twinrootspsychotherapy.com",
+    email: "heather@twinrootspsychotherapy.com",
     portalLabel: "Book a Consultation",
   },
   nav: [
@@ -40,36 +40,48 @@ export const brand = {
     {
       icon: "sunrise",
       title: "Postpartum Depression & Anxiety",
+      image: "/services/postpartum.jpg",
+      imageAlt: "A mother holding and feeding her newborn on a couch",
       body:
         "Support for the overwhelm, intrusive thoughts, and heaviness that can follow birth. You are not broken, and you are not alone.",
     },
     {
       icon: "seedling",
       title: "Pregnancy & Prenatal Support",
+      image: "/services/prenatal.jpg",
+      imageAlt: "A pregnant woman talking with a therapist",
       body:
         "Care for the worries, changes, and big feelings that come with carrying and preparing for a baby.",
     },
     {
       icon: "heart",
       title: "NICU Parents",
+      image: "/services/nicu.jpg",
+      imageAlt: "A newborn resting in a NICU bed",
       body:
         "A place to process the fear and helplessness of the NICU, held by someone who has lived it.",
     },
     {
       icon: "bloom",
       title: "Pregnancy & Infant Loss",
+      image: "/services/loss.jpg",
+      imageAlt: "Cupped hands holding a soft light",
       body:
         "Compassionate space for bereaved parents to grieve, remember, and slowly find footing again.",
     },
     {
       icon: "twins",
       title: "Parents of Multiples",
+      image: "/services/multiples.jpg",
+      imageAlt: "A mother holding her newborn twins",
       body:
         "The unique load of twins and multiples is real. Support built around the reality of more than one.",
     },
     {
       icon: "growth",
       title: "Individual Therapy",
+      image: "/services/individual.jpg",
+      imageAlt: "A therapist listening to a client in session",
       body:
         "Beyond the perinatal season, ongoing support for anxiety, life transitions, and reconnecting with yourself.",
     },
@@ -103,7 +115,7 @@ export const brand = {
   about: {
     heading: "Meet Dr. Heather St. Jean-Garcia",
     paragraphs: [
-      "Heather is a licensed Marriage and Family Therapist (Psy.D., LMFT #53811) based in San Diego, offering telehealth to clients across California.",
+      "Heather is a licensed Marriage and Family Therapist (Psy.D., LMFT #53811) based in San Diego County. She offers telehealth to clients anywhere in California, and in-person sessions in La Mesa.",
       "Her passion for perinatal mental health is deeply personal. As a mother of twins who spent time in the NICU, and as a survivor of postpartum depression, she understands how isolating and frightening this season can feel, and how much it helps to be truly understood.",
       "She considers her office a safe space for NICU and bereaved parents, and is honored to walk alongside individuals through pregnancy, postpartum, loss, and the ongoing work of caring for themselves while caring for others.",
       "While perinatal mental health is the heart of her practice, Heather also welcomes clients seeking support with anxiety, life transitions, and individual growth.",
@@ -112,8 +124,8 @@ export const brand = {
 
   // Reassurance strip
   trust: [
-    "Licensed Psy.D., LMFT",
-    "Telehealth across California",
+    "Licensed Psy.D., LMFT #53811",
+    "Telehealth in CA + in-person in La Mesa",
     "Perinatal mental health focus",
     "Lived experience with the NICU & PPD",
   ],

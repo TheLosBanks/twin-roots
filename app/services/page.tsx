@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { brand } from "@/lib/brand";
 import { PageHero } from "@/components/PageHero";
 import { BookingCta } from "@/components/BookingCta";
@@ -19,13 +20,24 @@ export default function Services() {
           {brand.specialties.map((s) => (
             <div
               key={s.title}
-              className="rounded-2xl border border-line bg-cream p-8 transition hover:border-sage/50 hover:shadow-sm"
+              className="group overflow-hidden rounded-2xl border border-line bg-cream transition hover:border-sage/50 hover:shadow-sm"
             >
-              <div className="flex h-12 w-12 items-center justify-center rounded-full bg-sage/10">
-                <ServiceIcon name={s.icon} className="h-7 w-7" />
+              <div className="relative aspect-[16/10] overflow-hidden bg-sand">
+                <Image
+                  src={s.image}
+                  alt={s.imageAlt}
+                  fill
+                  sizes="(max-width: 768px) 100vw, 50vw"
+                  className="object-cover transition duration-700 group-hover:scale-[1.04]"
+                />
               </div>
-              <h2 className="mt-5 text-2xl text-ink">{s.title}</h2>
-              <p className="mt-3 leading-relaxed text-muted">{s.body}</p>
+              <div className="relative p-8">
+                <div className="absolute -top-7 left-8 flex h-14 w-14 items-center justify-center rounded-full border border-line bg-cream shadow-sm">
+                  <ServiceIcon name={s.icon} className="h-7 w-7" />
+                </div>
+                <h2 className="mt-5 text-2xl text-ink">{s.title}</h2>
+                <p className="mt-3 leading-relaxed text-muted">{s.body}</p>
+              </div>
             </div>
           ))}
         </div>
@@ -35,8 +47,8 @@ export default function Services() {
             <div>
               <p className="text-xs uppercase tracking-[0.2em] text-clay-soft">Format</p>
               <p className="mt-3 leading-relaxed text-cream/85">
-                Secure video sessions (telehealth), available to clients located
-                anywhere in California.
+                Secure video sessions for clients anywhere in California, plus
+                in-person sessions in La Mesa, CA.
               </p>
             </div>
             <div>
