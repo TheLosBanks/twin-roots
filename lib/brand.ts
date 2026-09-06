@@ -124,7 +124,7 @@ export const brand = {
 
   // Reassurance strip
   trust: [
-    "Licensed Psy.D., LMFT #53811",
+    "Licensed Marriage & Family Therapist #53811",
     "Telehealth in CA + in-person in La Mesa",
     "Perinatal mental health focus",
     "Lived experience with the NICU & PPD",
