@@ -58,6 +58,7 @@ export function LogoMark({ className = "" }: { className?: string }) {
   );
 }
 
+// Wordmark mirrors the printed lockup: "Twin Roots" over spaced "PSYCHOTHERAPY".
 export function Wordmark({
   className = "",
   tone = "ink",
@@ -65,12 +66,26 @@ export function Wordmark({
   className?: string;
   tone?: "ink" | "cream";
 }) {
-  const color = tone === "cream" ? "text-cream" : "text-ink";
+  const cream = tone === "cream";
+  const Emblem = cream ? LogoEmblemWhite : LogoEmblem;
   return (
-    <span className={`flex items-center gap-2 ${className}`}>
-      <LogoEmblem className="h-10 w-10 shrink-0" />
-      <span className={`font-serif text-[1.35rem] leading-none ${color}`}>
-        {brand.shortName}
+    <span className={`flex items-center gap-2.5 ${className}`}>
+      <Emblem className="h-11 w-11 shrink-0" />
+      <span className="flex flex-col">
+        <span
+          className={`font-serif text-[1.35rem] leading-none ${
+            cream ? "text-cream" : "text-ink"
+          }`}
+        >
+          {brand.shortName}
+        </span>
+        <span
+          className={`mt-1 text-[0.58rem] uppercase leading-none tracking-[0.28em] ${
+            cream ? "text-cream/70" : "text-sage"
+          }`}
+        >
+          Psychotherapy
+        </span>
       </span>
     </span>
   );
