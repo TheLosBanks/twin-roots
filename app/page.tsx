@@ -63,7 +63,7 @@ export default function Home() {
           <div className="relative">
             <div className="relative aspect-[4/5] overflow-hidden rounded-3xl ring-1 ring-line">
               <Image
-                src="/heather.jpg"
+                src="/heather-2026.jpg"
                 alt={brand.therapist.name}
                 fill
                 className="object-cover object-top"
