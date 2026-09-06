@@ -91,7 +91,7 @@ export const brand = {
   approach: {
     heading: "Care that starts with being understood.",
     lead:
-      "Heather's work is shaped by her own story: a mother of twins who spent time in the NICU, and a survivor of postpartum depression. She knows this terrain from the inside.",
+      "My work is shaped by my own story. I am a mother of twins who spent time in the NICU, and a survivor of postpartum depression. I know this terrain from the inside.",
     points: [
       {
         title: "Lived experience, not just training",
@@ -115,10 +115,10 @@ export const brand = {
   about: {
     heading: "Meet Dr. Heather St. Jean-Garcia",
     paragraphs: [
-      "Heather is a licensed Marriage and Family Therapist (Psy.D., LMFT #53811) based in San Diego County. She offers telehealth to clients anywhere in California, and in-person sessions in La Mesa.",
-      "Her passion for perinatal mental health is deeply personal. As a mother of twins who spent time in the NICU, and as a survivor of postpartum depression, she understands how isolating and frightening this season can feel, and how much it helps to be truly understood.",
-      "She considers her office a safe space for NICU and bereaved parents, and is honored to walk alongside individuals through pregnancy, postpartum, loss, and the ongoing work of caring for themselves while caring for others.",
-      "While perinatal mental health is the heart of her practice, Heather also welcomes clients seeking support with anxiety, life transitions, and individual growth.",
+      "I am a licensed Marriage and Family Therapist (Psy.D., LMFT #53811) based in San Diego County. I offer telehealth to clients anywhere in California, and in-person sessions in La Mesa.",
+      "My passion for perinatal mental health is deeply personal. As a mother of twins who spent time in the NICU, and as a survivor of postpartum depression, I understand how isolating and frightening this season can feel, and how much it helps to be truly understood.",
+      "I consider my office a safe space for NICU and bereaved parents, and I am honored to walk alongside individuals through pregnancy, postpartum, loss, and the ongoing work of caring for themselves while caring for others.",
+      "While perinatal mental health is the heart of my practice, I also welcome clients seeking support with anxiety, life transitions, and individual growth.",
     ],
   },
 
