@@ -9,8 +9,8 @@ export function BookingCta() {
           Reaching out is the first root you put down.
         </h2>
         <p className="mx-auto mt-4 max-w-xl text-cream/90">
-          Book a free 15-minute consultation to see if working together feels
-          right. No pressure, just a conversation.
+          Send a note or an email and I will get back to you personally to find
+          a time that works. No pressure, just a first step.
         </p>
         <div className="mt-8 flex flex-col items-center justify-center gap-3 sm:flex-row">
           <Link

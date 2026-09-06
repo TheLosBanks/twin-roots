@@ -18,7 +18,7 @@ export const brand = {
   },
   contact: {
     email: "heather@twinrootspsychotherapy.com",
-    portalLabel: "Book a Consultation",
+    portalLabel: "Get in Touch",
   },
   nav: [
     { label: "About", href: "/about" },

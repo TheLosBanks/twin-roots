@@ -59,14 +59,14 @@ export default function Services() {
             <div>
               <p className="text-xs uppercase tracking-[0.2em] text-clay-soft">Getting started</p>
               <p className="mt-3 leading-relaxed text-cream/85">
-                We begin with a free 15-minute consultation, then a first session to
-                understand what you need and how I can help.
+                Reach out by email or through the contact form. I will get back
+                to you to schedule a first session and talk through what you need.
               </p>
             </div>
             <div>
               <p className="text-xs uppercase tracking-[0.2em] text-clay-soft">Good to know</p>
               <p className="mt-3 leading-relaxed text-cream/85">
-                Fees are shared during our consultation, and your insurance
+                Fees are shared when we first connect, and your insurance
                 benefits are verified before the first session.
               </p>
             </div>

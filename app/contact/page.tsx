@@ -17,11 +17,10 @@ export default function Contact() {
       <section className="mx-auto max-w-5xl px-5 py-16 md:py-24">
         <div className="grid gap-12 md:grid-cols-[1fr_1.1fr]">
           <div>
-            <h2 className="text-2xl text-ink">Book a free consultation</h2>
+            <h2 className="text-2xl text-ink">Get in touch</h2>
             <p className="mt-4 leading-relaxed text-muted">
-              The best way to begin is a free 15-minute call to see if we are a good
-              fit. Send a note below or email me directly, and I will get back to you
-              personally.
+              Send a note below or email me directly. I will get back to you
+              personally and we will find a time to meet.
             </p>
 
             <div className="mt-8 space-y-5 text-sm">
