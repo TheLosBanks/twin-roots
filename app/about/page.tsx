@@ -43,7 +43,6 @@ export default function About() {
               <ul className="mt-3 space-y-1.5 text-muted">
                 <li>{brand.therapist.credentials}</li>
                 <li>{brand.therapist.title}</li>
-                <li>{brand.therapist.license}</li>
                 <li>{brand.location.serves}</li>
               </ul>
             </div>
