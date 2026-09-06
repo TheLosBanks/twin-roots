@@ -42,7 +42,7 @@ const schema = {
   "@type": "MedicalBusiness",
   name: brand.name,
   description:
-    "Perinatal and postpartum psychotherapy serving California via telehealth.",
+    "Perinatal and postpartum psychotherapy: telehealth across California and in-person sessions in La Mesa.",
   url: `https://${brand.domain}`,
   areaServed: { "@type": "State", name: "California" },
   medicalSpecialty: "Psychiatric",
@@ -52,7 +52,7 @@ const schema = {
     jobTitle: brand.therapist.title,
     honorificSuffix: brand.therapist.credentials,
   },
-  address: { "@type": "PostalAddress", addressLocality: "San Diego", addressRegion: "CA" },
+  address: { "@type": "PostalAddress", addressLocality: "La Mesa", addressRegion: "CA" },
 };
 
 export default function RootLayout({
