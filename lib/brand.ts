@@ -41,6 +41,7 @@ export const brand = {
       icon: "sunrise",
       title: "Postpartum Depression & Anxiety",
       image: "/services/postpartum.jpg",
+      imagePos: "object-top",
       imageAlt: "A mother holding and feeding her newborn on a couch",
       body:
         "Support for the overwhelm, intrusive thoughts, and heaviness that can follow birth. You are not broken, and you are not alone.",
@@ -49,6 +50,7 @@ export const brand = {
       icon: "seedling",
       title: "Pregnancy & Prenatal Support",
       image: "/services/prenatal.jpg",
+      imagePos: "object-top",
       imageAlt: "A pregnant woman talking with a therapist",
       body:
         "Care for the worries, changes, and big feelings that come with carrying and preparing for a baby.",
@@ -57,6 +59,7 @@ export const brand = {
       icon: "heart",
       title: "NICU Parents",
       image: "/services/nicu.jpg",
+      imagePos: "object-center",
       imageAlt: "A newborn resting in a NICU bed",
       body:
         "A place to process the fear and helplessness of the NICU, held by someone who has lived it.",
@@ -65,6 +68,7 @@ export const brand = {
       icon: "bloom",
       title: "Pregnancy & Infant Loss",
       image: "/services/loss.jpg",
+      imagePos: "object-center",
       imageAlt: "Cupped hands holding a soft light",
       body:
         "Compassionate space for bereaved parents to grieve, remember, and slowly find footing again.",
@@ -73,6 +77,7 @@ export const brand = {
       icon: "twins",
       title: "Parents of Multiples",
       image: "/services/multiples.jpg",
+      imagePos: "object-center",
       imageAlt: "A mother holding her newborn twins",
       body:
         "The unique load of twins and multiples is real. Support built around the reality of more than one.",
@@ -81,6 +86,7 @@ export const brand = {
       icon: "growth",
       title: "Individual Therapy",
       image: "/services/individual.jpg",
+      imagePos: "object-top",
       imageAlt: "A therapist listening to a client in session",
       body:
         "Beyond the perinatal season, ongoing support for anxiety, life transitions, and reconnecting with yourself.",

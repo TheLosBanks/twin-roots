@@ -28,7 +28,7 @@ export default function Services() {
                   alt={s.imageAlt}
                   fill
                   sizes="(max-width: 768px) 100vw, 50vw"
-                  className="object-cover transition duration-700 group-hover:scale-[1.04]"
+                  className={`object-cover ${s.imagePos} transition duration-700 group-hover:scale-[1.04]`}
                 />
               </div>
               <div className="relative p-8">
