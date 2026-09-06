@@ -15,27 +15,35 @@ export async function POST(req: NextRequest) {
   const to = process.env.CONTACT_TO;
   const from = process.env.CONTACT_FROM;
 
-  if (key && to && from) {
-    try {
-      await fetch("https://api.resend.com/emails", {
-        method: "POST",
-        headers: {
-          Authorization: `Bearer ${key}`,
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify({
-          from,
-          to,
-          reply_to: email,
-          subject: `New inquiry from ${name} - Twin Roots`,
-          text: `Name: ${name}\nEmail: ${email}\n\n${message || "(no message)"}`,
-        }),
-      });
-    } catch {
-      // fall through: never lose the lead over a mail hiccup
-    }
-  } else {
-    console.log("[contact]", { name, email, message });
+  // Without mail credentials nobody would ever see this. Fail loudly so the
+  // form points people at Heather's email instead of faking a sent message.
+  if (!key || !to || !from) {
+    console.error("[contact] mail not configured, inquiry not delivered", {
+      name,
+      email,
+    });
+    return NextResponse.json({ error: "Mail not configured" }, { status: 500 });
+  }
+
+  try {
+    const res = await fetch("https://api.resend.com/emails", {
+      method: "POST",
+      headers: {
+        Authorization: `Bearer ${key}`,
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({
+        from,
+        to,
+        reply_to: email,
+        subject: `New inquiry from ${name} - Twin Roots`,
+        text: `Name: ${name}\nEmail: ${email}\n\n${message || "(no message)"}`,
+      }),
+    });
+    if (!res.ok) throw new Error(await res.text());
+  } catch (err) {
+    console.error("[contact] send failed", err);
+    return NextResponse.json({ error: "Send failed" }, { status: 502 });
   }
 
   return NextResponse.json({ ok: true });
