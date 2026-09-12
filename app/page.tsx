@@ -154,19 +154,19 @@ export default function Home() {
       {/* Insurance */}
       <section className="border-y border-line bg-sand/40">
         <div className="mx-auto max-w-6xl px-5 py-14">
-          <div className="grid gap-8 md:grid-cols-[0.9fr_1.6fr]">
-            <div>
-              <p className="text-xs uppercase tracking-[0.2em] text-clay">
-                Paying for care
-              </p>
-              <h2 className="mt-4 text-2xl leading-tight text-ink md:text-3xl">
-                {brand.insurance.heading}
-              </h2>
-              <p className="mt-3 leading-relaxed text-muted">
-                {brand.insurance.lead}
-              </p>
-            </div>
-            <InsuranceCompact tone="sand" />
+          <div className="max-w-2xl">
+            <p className="text-xs uppercase tracking-[0.2em] text-clay">
+              Paying for care
+            </p>
+            <h2 className="mt-4 text-2xl leading-tight text-ink md:text-3xl">
+              {brand.insurance.heading}
+            </h2>
+            <p className="mt-3 leading-relaxed text-muted">
+              {brand.insurance.lead}
+            </p>
+          </div>
+          <div className="mt-8">
+            <InsuranceCompact />
           </div>
         </div>
       </section>

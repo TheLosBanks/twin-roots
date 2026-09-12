@@ -181,26 +181,51 @@ export const brand = {
   },
 
   // Insurance accepted. Add a plan by adding a line here; the pills render from this.
+  // Insurance routes through two booking platforms. Anthem, Blue Shield and
+  // Cigna are on BOTH, and Octave reimburses better, so those are listed ONLY
+  // under Octave to steer people there first. Tricare is on neither and stays
+  // direct with Heather.
   insurance: {
     heading: "Insurance accepted",
     lead:
-      "Coverage varies by plan, so we will verify your benefits before your first session.",
-    plans: [
-      { name: "Aetna" },
-      { name: "Anthem Blue Cross California" },
-      { name: "Blue Shield of California" },
-      { name: "Carelon Behavioral Health", note: "serves Scripps Health Plan" },
-      { name: "Centivo / Evernorth" },
-      { name: "Cigna" },
-      { name: "Tricare Select PPO", note: "with superbill" },
+      "Find your plan below and book directly. Coverage varies, so benefits are verified before your first session.",
+    groups: [
+      {
+        id: "octave",
+        title: "Book through Octave",
+        url: "https://www.findoctave.com/therapist/1013239730/heather-st-jean-garcia?state=california",
+        ctaLabel: "Schedule on Octave",
+        plans: [
+          { name: "Anthem Blue Cross of California" },
+          { name: "Blue Shield of California" },
+          { name: "Cigna Healthcare / Evernorth" },
+          { name: "Centivo" },
+          { name: "Out-of-State BlueCard PPO" },
+        ],
+      },
+      {
+        id: "headway",
+        title: "Book through Headway",
+        url: "https://care.headway.co/providers/heather-st-jean-garcia",
+        ctaLabel: "Schedule on Headway",
+        plans: [
+          { name: "Aetna" },
+          { name: "Carelon Behavioral Health", note: "serves Scripps Health Plan" },
+          { name: "Health Net" },
+        ],
+        selfPay: {
+          label: "Self-pay rate",
+          rate: "$175",
+          unit: "per session",
+        },
+      },
     ],
+    direct: {
+      plans: [{ name: "Tricare Select PPO", note: "with superbill" }],
+      note: "Tricare is billed directly with me rather than through a platform. Send a note and we will get you started.",
+    },
     footnote:
       "Not on this list? Ask about a superbill you can submit to your plan for out-of-network reimbursement.",
-    selfPay: {
-      label: "Self-pay rate",
-      rate: "$175",
-      unit: "per session",
-    },
   },
 
   // Reassurance strip
