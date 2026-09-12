@@ -234,7 +234,7 @@ export const brand = {
   // what she recommends is a decision she has not made yet. Other people's
   // books (with affiliate links) come later, and will need an FTC disclosure.
   resources: {
-    heading: "Books & resources",
+    heading: "Books & Resources",
     lead:
       "Things I have helped make, and things I point people toward. More coming as I add to this page.",
     // Written from scratch, not adapted from Well-Mamas' version. Covers the
