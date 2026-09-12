@@ -6,6 +6,10 @@ export const brand = {
   shortName: "Twin Roots",
   domain: "twinrootspsychotherapy.com",
   tagline: "Rooted care for the season of becoming a parent.",
+  // Heather's line, for the footer only. brand.tagline stays descriptive
+  // because it doubles as the Open Graph description.
+  footerTagline:
+    "Why Twin Roots Psychotherapy? Because someone needs to help untangle the roots.",
   therapist: {
     name: "Dr. Heather St. Jean-Garcia",
     credentials: "Psy.D., LMFT #53811",
@@ -116,6 +120,54 @@ export const brand = {
       },
     ],
   },
+
+  // Clinical modalities, in Heather's own words. Illustrations are hers too.
+  modalities: [
+    {
+      slug: "humanistic",
+      title: "Humanistic / Person-Centered Therapy",
+      image: "/approach/humanistic.jpg",
+      imageAlt:
+        "Two women in armchairs assembling a heart-shaped puzzle that reads: your story matters, your strengths matter, you are enough, a more authentic you",
+      paragraphs: [
+        "At the heart of my practice is the belief that you already possess strengths and insight that can help you grow. My role is not to tell you who you should be or how you should live your life.",
+        "Instead, I strive to create a genuine, accepting, and nonjudgmental space where you can safely explore your thoughts, emotions, relationships, and experiences. Through empathy, authenticity, and connection, we work together to deepen your self-awareness and help you make choices that feel more aligned with who you are and who you want to become.",
+      ],
+    },
+    {
+      slug: "motivational-interviewing",
+      title: "Motivational Interviewing",
+      image: "/approach/motivational-interviewing.jpg",
+      imageAlt:
+        "A woman climbing steps labeled explore, clarify, find your own reasons, and take action, toward a brighter you",
+      paragraphs: [
+        "Sometimes you know something in your life could change, but you are not quite sure whether you are ready. That is okay. Therapy does not have to begin with having all the answers or even knowing exactly what you want to change.",
+        "Using Motivational Interviewing, I help you explore uncertainty without judgment or pressure. Together, we can look at what matters most to you, what might be holding you back, and what change could look like when you are ready. You remain in control of your choices while I help you discover your own reasons and motivation for moving forward.",
+      ],
+    },
+    {
+      slug: "cbt",
+      title: "Cognitive Behavioral Therapy (CBT)",
+      image: "/approach/cbt.jpg",
+      imageAlt:
+        "Two women in session with a diagram linking thoughts, feelings, and behaviors in a cycle",
+      paragraphs: [
+        "Pregnancy, postpartum, and parenthood can bring emotions you never expected. Anxiety, sadness, guilt, intrusive thoughts, or feeling like you are somehow not doing this right can become overwhelming.",
+        "Using CBT, we explore connections between your thoughts, emotions, and behaviors. Together, we identify patterns that may be contributing to distress and develop healthier, more compassionate ways of responding. My goal is to help you navigate this season with practical coping skills, greater self-awareness, and more confidence in yourself.",
+      ],
+    },
+    {
+      slug: "erp",
+      title: "Exposure and Response Prevention (ERP) for OCD",
+      image: "/approach/erp.jpg",
+      imageAlt:
+        "A woman standing calmly with her palms out, holding back storm clouds of anxious what-if thoughts",
+      paragraphs: [
+        "OCD can leave you feeling stuck in a cycle of intrusive thoughts, anxiety, and behaviors meant to provide relief. ERP helps you gradually face those uncomfortable thoughts, feelings, or situations while learning to respond differently instead of relying on compulsions.",
+        "We move at a pace that feels manageable while building your confidence in handling uncertainty and discomfort. My goal is not to eliminate every unwanted thought. Instead, we work toward helping you feel less controlled by OCD so you can focus more fully on what matters in your life.",
+      ],
+    },
+  ],
 
   // About
   about: {

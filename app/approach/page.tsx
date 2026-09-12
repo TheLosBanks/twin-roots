@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { brand } from "@/lib/brand";
 import { PageHero } from "@/components/PageHero";
 import { BookingCta } from "@/components/BookingCta";
@@ -28,7 +29,58 @@ export default function Approach() {
           ))}
         </div>
 
-        <div className="mt-16 rounded-3xl border border-line bg-sand/50 p-8 md:p-12">
+      </section>
+
+      {/* Clinical approach */}
+      <section className="bg-sand/40">
+        <div className="mx-auto max-w-5xl px-5 py-16 md:py-24">
+          <div className="max-w-2xl">
+            <p className="text-xs uppercase tracking-[0.2em] text-clay">How I work</p>
+            <h2 className="mt-4 text-3xl leading-tight text-ink md:text-4xl">
+              My clinical approach
+            </h2>
+            <p className="mt-4 leading-relaxed text-muted">
+              I draw on several approaches and shape them around you, rather than
+              fitting you to a method.
+            </p>
+          </div>
+
+          <div className="mt-14 space-y-16">
+            {brand.modalities.map((m, i) => (
+              <div
+                key={m.slug}
+                className="grid items-center gap-8 md:grid-cols-2 md:gap-12"
+              >
+                <div
+                  className={`overflow-hidden rounded-3xl bg-cream ring-1 ring-line ${
+                    i % 2 === 1 ? "md:order-2" : ""
+                  }`}
+                >
+                  <Image
+                    src={m.image}
+                    alt={m.imageAlt}
+                    width={1200}
+                    height={1200}
+                    className="h-auto w-full"
+                    sizes="(max-width: 768px) 100vw, 45vw"
+                  />
+                </div>
+                <div>
+                  <h3 className="text-2xl leading-snug text-ink">{m.title}</h3>
+                  {m.paragraphs.map((t) => (
+                    <p key={t.slice(0, 24)} className="mt-4 leading-relaxed text-muted">
+                      {t}
+                    </p>
+                  ))}
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="mx-auto max-w-4xl px-5 py-16 md:py-24">
+        <div className="rounded-3xl border border-line bg-sand/50 p-8 md:p-12">
           <h2 className="text-2xl text-sage-deep md:text-3xl">
             What working together looks like
           </h2>

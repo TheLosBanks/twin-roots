@@ -10,7 +10,7 @@ export function Footer() {
           <div className="max-w-sm">
             <Wordmark tone="cream" />
             <p className="mt-4 text-sm leading-relaxed text-cream/70">
-              {brand.tagline}
+              {brand.footerTagline}
             </p>
           </div>
 
