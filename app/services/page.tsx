@@ -3,7 +3,7 @@ import { brand } from "@/lib/brand";
 import { PageHero } from "@/components/PageHero";
 import { BookingCta } from "@/components/BookingCta";
 import { ServiceIcon } from "@/components/ServiceIcon";
-import { InsuranceSection } from "@/components/Insurance";
+import { InsuranceRows } from "@/components/Insurance";
 
 export const metadata = { title: "Services" };
 
@@ -43,8 +43,16 @@ export default function Services() {
           ))}
         </div>
 
-        <div className="mt-12">
-          <InsuranceSection />
+        <div className="mt-12 rounded-3xl border border-line bg-white/40 p-8 md:p-12">
+          <h2 className="text-2xl text-ink md:text-3xl">
+            {brand.insurance.heading}
+          </h2>
+          <p className="mt-3 max-w-2xl leading-relaxed text-muted">
+            {brand.insurance.lead}
+          </p>
+          <div className="mt-8">
+            <InsuranceRows />
+          </div>
         </div>
 
         <div className="mt-12 rounded-3xl bg-sage-deep p-8 text-cream md:p-12">

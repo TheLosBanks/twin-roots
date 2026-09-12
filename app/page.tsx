@@ -4,7 +4,7 @@ import { brand } from "@/lib/brand";
 import { LogoEmblem } from "@/components/Logo";
 import { ServiceIcon } from "@/components/ServiceIcon";
 import { BookingCta } from "@/components/BookingCta";
-import { InsuranceCompact } from "@/components/Insurance";
+import { InsuranceRows } from "@/components/Insurance";
 
 export default function Home() {
   return (
@@ -166,7 +166,7 @@ export default function Home() {
             </p>
           </div>
           <div className="mt-8">
-            <InsuranceCompact />
+            <InsuranceRows />
           </div>
         </div>
       </section>

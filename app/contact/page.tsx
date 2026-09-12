@@ -1,7 +1,7 @@
 import { brand } from "@/lib/brand";
 import { PageHero } from "@/components/PageHero";
 import { ContactForm } from "@/components/ContactForm";
-import { InsuranceCompact } from "@/components/Insurance";
+import { InsuranceRows } from "@/components/Insurance";
 
 export const metadata = { title: "Contact" };
 
@@ -43,13 +43,6 @@ export default function Contact() {
               </div>
             </div>
 
-            <div className="mt-8">
-              <InsuranceCompact heading="Insurance accepted" />
-              <p className="mt-4 text-sm leading-relaxed text-muted">
-                {brand.insurance.footnote}
-              </p>
-            </div>
-
             <div className="mt-8 rounded-2xl border border-clay/30 bg-clay/5 p-5 text-sm leading-relaxed text-ink/80">
               If you are in crisis or thinking about harming yourself, please call or
               text 988 for the Suicide and Crisis Lifeline, or dial 911. You matter,
@@ -59,6 +52,21 @@ export default function Contact() {
 
           <div className="rounded-3xl border border-line bg-white/60 p-7 md:p-9">
             <ContactForm />
+          </div>
+        </div>
+      </section>
+
+      {/* Insurance gets the full page width so the plan pills can breathe */}
+      <section className="border-t border-line bg-sand/40">
+        <div className="mx-auto max-w-5xl px-5 py-16 md:py-20">
+          <h2 className="text-2xl text-ink md:text-3xl">
+            {brand.insurance.heading}
+          </h2>
+          <p className="mt-3 max-w-2xl leading-relaxed text-muted">
+            {brand.insurance.lead}
+          </p>
+          <div className="mt-8">
+            <InsuranceRows />
           </div>
         </div>
       </section>
