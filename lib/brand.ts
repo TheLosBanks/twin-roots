@@ -28,6 +28,7 @@ export const brand = {
     { label: "About", href: "/about" },
     { label: "Services", href: "/services" },
     { label: "Approach", href: "/approach" },
+    { label: "Resources", href: "/resources" },
     { label: "Contact", href: "/contact" },
   ],
 
@@ -226,6 +227,46 @@ export const brand = {
     },
     footnote:
       "Not on this list? Ask about a superbill you can submit to your plan for out-of-network reimbursement.",
+  },
+
+  // Books & resources. Plain Amazon links, no affiliate tags: Heather earns
+  // author royalties either way, and a clinician's site taking commission on
+  // what she recommends is a decision she has not made yet. Other people's
+  // books (with affiliate links) come later, and will need an FTC disclosure.
+  resources: {
+    heading: "Books & resources",
+    lead:
+      "Things I have helped make, and things I point people toward. More coming as I add to this page.",
+    books: [
+      {
+        slug: "iam-alphabet",
+        title: "The I AM Alphabet",
+        subtitle: "Positive Affirmations from A to Z",
+        image: "/books/iam-alphabet.jpg",
+        byline: "Heather Garcia, Carlos Garcia Jr., Arif Setiadi, Jessica Milton",
+        blurb:
+          "A picture book that walks children through the alphabet one affirmation at a time, so the words they learn about themselves are kind ones.",
+        links: [
+          { label: "Amazon paperback", url: "https://www.amazon.com/dp/1735916617" },
+          {
+            label: "Hardcover on Lulu",
+            url: "https://www.lulu.com/shop/heather-garcia-and-carlos-garcia-jr-and-arif-setiadi-and-jessica-milton/the-i-am-alphabet/hardcover/product-v7kmp5.html",
+          },
+        ],
+      },
+      {
+        slug: "iam-coloring",
+        title: "The I AM Alphabet Coloring Book",
+        subtitle: "Positive Affirmations from A to Z",
+        image: "/books/iam-coloring.jpg",
+        byline: "Los Garcia",
+        blurb:
+          "The companion coloring book. Same affirmations, with room for a child to sit with each one and make it theirs.",
+        links: [
+          { label: "Amazon paperback", url: "https://www.amazon.com/dp/1735916633" },
+        ],
+      },
+    ],
   },
 
   // Reassurance strip
