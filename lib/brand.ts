@@ -237,6 +237,31 @@ export const brand = {
     heading: "Books & resources",
     lead:
       "Things I have helped make, and things I point people toward. More coming as I add to this page.",
+    // Written from scratch, not adapted from Well-Mamas' version. Covers the
+    // same required ground (commission, clinical independence, no obligation,
+    // who to ask) in her own first-person voice. Accurate today: nothing here
+    // is an affiliate link yet, and she co-wrote one of the two books.
+    disclosure: {
+      heading: "About these links",
+      paragraphs: [
+        {
+          title: "What I earn",
+          body:
+            "The I AM Alphabet is a book I co-wrote, so I earn author royalties when a copy sells. If I ever add books by other people to this page, some of those links may be affiliate links, meaning I could earn a small commission when you buy through them. In either case the price you pay is exactly the same.",
+        },
+        {
+          title: "Why that does not change what I recommend",
+          body:
+            "Anything I point you toward is here because I think it might genuinely help. I do not choose what to recommend based on what it pays, and I would take something down if it stopped being useful regardless of what it earned.",
+        },
+        {
+          title: "You are never expected to buy anything",
+          body:
+            "None of this is part of treatment. Borrow it from the library, get it secondhand, or skip it entirely. Nothing about our work together depends on it.",
+        },
+      ],
+      contactLead: "Questions about any of this are welcome. Email me at",
+    },
     books: [
       {
         slug: "iam-alphabet",

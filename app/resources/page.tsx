@@ -60,6 +60,30 @@ export default function Resources() {
           someone. If this season feels heavier than a book can hold, please
           reach out.
         </p>
+
+        <div className="mt-10 rounded-2xl border border-line bg-sand/40 p-6 md:p-8">
+          <h2 className="font-serif text-xl text-sage-deep">
+            {brand.resources.disclosure.heading}
+          </h2>
+          <div className="mt-4 space-y-4">
+            {brand.resources.disclosure.paragraphs.map((p) => (
+              <div key={p.title}>
+                <p className="text-sm font-medium text-ink">{p.title}</p>
+                <p className="mt-1 text-sm leading-relaxed text-muted">{p.body}</p>
+              </div>
+            ))}
+            <p className="text-sm leading-relaxed text-muted">
+              {brand.resources.disclosure.contactLead}{" "}
+              <a
+                href={`mailto:${brand.contact.email}`}
+                className="text-sage-deep underline-offset-2 hover:underline"
+              >
+                {brand.contact.email}
+              </a>
+              .
+            </p>
+          </div>
+        </div>
       </section>
 
       <BookingCta />
