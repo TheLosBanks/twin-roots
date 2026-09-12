@@ -235,8 +235,8 @@ export const brand = {
   // books (with affiliate links) come later, and will need an FTC disclosure.
   resources: {
     heading: "Books & Resources",
-    lead:
-      "Things I have helped make, and things I point people toward. More coming as I add to this page.",
+    lead: "Things I have helped make, and things I point people toward.",
+    leadSecondLine: "More coming as I add to this page.",
     // Written from scratch, not adapted from Well-Mamas' version. Covers the
     // same required ground (commission, clinical independence, no obligation,
     // who to ask) in her own first-person voice. Accurate today: nothing here
